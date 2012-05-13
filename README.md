@@ -20,3 +20,5 @@ Script showing differences in original and encoded image, plus some sample filte
 An analysis of frequencies in multiple videos (an ad-hoc method using linear correlation of integrated values). Requires ffmpeg installed in path for frame grabbing:
 
     python --start=1 --time=1 source_video.mp4 encoded_video.mp4
+
+Some screenshots saved from the matplotlib graphs are in `sample_outputs` directory.
