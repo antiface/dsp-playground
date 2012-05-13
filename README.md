@@ -17,7 +17,7 @@ Script showing differences in original and encoded image, plus some sample filte
 
     python fourier_video_classify.py -o baader_original-12s-256x256.png -e baader_mencoder_fd_deint-12s-256x256.png
 
-An analysis of frequencies in multiple videos (an ad-hoc method using linear correlation of integrated values). Requires ffmpeg installed in path for frame grabbing:
+An analysis of frequencies in multiple videos (an ad-hoc method using linear correlation of integrated power spectral density vectors). Requires ffmpeg installed in path for frame grabbing:
 
     python --start=1 --time=1 source_video.mp4 encoded_video.mp4
 
