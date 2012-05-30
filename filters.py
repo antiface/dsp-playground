@@ -96,7 +96,7 @@ fftImage = fftLog(i1)
 fig = figure()
 
 #common color map for image presentation
-icmap = cm.Reds_r
+icmap = cm.gray
 
 ax = fig.add_subplot(241)
 ax.set_title("Sobel Vertical filter")
@@ -123,7 +123,7 @@ imshow(gaussDenoised, cmap=icmap, interpolation='nearest')
 
 ax = fig.add_subplot(247)
 ax.set_title("^ Fourier spectrum ^")
-imshow(fftLog(gaussed), cmap=icmap, interpolation='nearest')
+imshow(fftLog(gaussDenoised), cmap=icmap, interpolation='nearest')
 
 ax = fig.add_subplot(244)
 ax.set_title("Gaussian kernel - bivariate normal")
