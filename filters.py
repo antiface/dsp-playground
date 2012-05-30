@@ -83,7 +83,7 @@ sobeledVert = convolve2d(i1, sobelVertical)
 #simple function that turns Fourier spectrum to real numbers by coefs' absolute
 #value and returns it in log scale; the +1 is to prevent log() going into
 #negative numbers for nicer visualization
-fftLog = lambda image: np.log(1+np.abs(np.fft.fft2(image)))
+fftLog = lambda image: np.log(1+np.abs(np.fft.fftshift(np.fft.fft2(image))))
 fftImage = fftLog(i1)
 #print np.min(fftImage), np.max(fftImage)
 
